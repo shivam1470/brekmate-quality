@@ -1,0 +1,232 @@
+[
+  {
+    "id": "BM-OPS-001",
+    "requirement": "BM-OPS",
+    "title": "Database failure",
+    "priority": "P1",
+    "given": "Database becomes unavailable during checkout",
+    "when": "Submit order",
+    "then": "No false confirmation or partial untracked financial mutation",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-002",
+    "requirement": "BM-OPS",
+    "title": "Transaction rollback",
+    "priority": "P1",
+    "given": "Failure between wallet debit and order commit",
+    "when": "Retry after recovery",
+    "then": "Atomic outcome or documented compensation preserves ledger consistency",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-003",
+    "requirement": "BM-OPS",
+    "title": "Worker retry",
+    "priority": "P1",
+    "given": "An async event handler fails after partial work",
+    "when": "Redeliver event",
+    "then": "Idempotent processing prevents repeated side effects",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-004",
+    "requirement": "BM-OPS",
+    "title": "Restore rehearsal",
+    "priority": "P1",
+    "given": "Known fixture database backup",
+    "when": "Restore into isolated environment",
+    "then": "Orders, ledger and constraints reconcile",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-005",
+    "requirement": "BM-OPS",
+    "title": "Real IAM",
+    "priority": "P1",
+    "given": "Deployed staging with least-privilege roles",
+    "when": "Run allowed and prohibited AWS operations",
+    "then": "Required access works and forbidden access is denied",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-006",
+    "requirement": "BM-OPS",
+    "title": "Actual event wiring",
+    "priority": "P1",
+    "given": "Real staging event source and handler",
+    "when": "Publish integration event",
+    "then": "Correct deployed handler processes event; emulator success alone is insufficient",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-007",
+    "requirement": "BM-OPS",
+    "title": "Load target",
+    "priority": "P1",
+    "given": "Approved peak load and latency/error budgets",
+    "when": "Run isolated load test",
+    "then": "Measured results satisfy approved budgets; no invented numeric SLO",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-008",
+    "requirement": "BM-OPS",
+    "title": "Production build",
+    "priority": "P1",
+    "given": "Signed release candidates on Android and iPhone",
+    "when": "Run full critical customer/staff/rider journeys",
+    "then": "Native release builds pass required device checks",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-009",
+    "requirement": "BM-OPS",
+    "title": "Account deletion release",
+    "priority": "P1",
+    "given": "Published deletion/help/privacy links",
+    "when": "Exercise deletion and review disclosures",
+    "then": "App behaviour and store disclosures agree",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-OPS-010",
+    "requirement": "BM-OPS",
+    "title": "Cost isolation",
+    "priority": "P1",
+    "given": "Local test run and temporary staging stack",
+    "when": "Execute and clean up tests",
+    "then": "Local suite needs no AWS credentials; cleanup protects production and persistent state",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

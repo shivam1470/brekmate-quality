@@ -1,0 +1,434 @@
+[
+  {
+    "id": "BM-EVENT-001",
+    "requirement": "BM-EVENT",
+    "title": "Venue information",
+    "priority": "P1",
+    "given": "Published venue configuration",
+    "when": "Open celebration section",
+    "then": "First-floor venue, approximate capacity, seating and lighting are accurately presented",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-002",
+    "requirement": "BM-EVENT",
+    "title": "Free venue",
+    "priority": "P1",
+    "given": "Any valid party enquiry",
+    "when": "Review terms",
+    "then": "Venue fee is zero and no minimum food order is imposed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-003",
+    "requirement": "BM-EVENT",
+    "title": "Occasion theme",
+    "priority": "P1",
+    "given": "Birthday, farewell and office gathering examples",
+    "when": "Select an occasion",
+    "then": "Relevant theme information is shown without claiming unavailable decoration",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-004",
+    "requirement": "BM-EVENT",
+    "title": "Enquiry submission",
+    "priority": "P1",
+    "given": "Valid contact, date/time, guest count and preferences",
+    "when": "Submit enquiry",
+    "then": "One enquiry is recorded, explicitly not a confirmed reservation",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-005",
+    "requirement": "BM-EVENT",
+    "title": "Duplicate enquiry retry",
+    "priority": "P1",
+    "given": "One successful enquiry with idempotency token",
+    "when": "Retry after network timeout",
+    "then": "No accidental duplicate enquiry is created",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-006",
+    "requirement": "BM-EVENT",
+    "title": "Capacity limit",
+    "priority": "P1",
+    "given": "Configured confirmed capacity N",
+    "when": "Request N and N+1 guests",
+    "then": "Capacity policy is enforced and excess request is not silently confirmed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-007",
+    "requirement": "BM-EVENT",
+    "title": "Overlapping confirmation",
+    "priority": "P1",
+    "given": "Two enquiries for overlapping slots",
+    "when": "Staff confirms concurrently",
+    "then": "At most one exclusive reservation is confirmed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "concurrency",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-008",
+    "requirement": "BM-EVENT",
+    "title": "Adjacent slots",
+    "priority": "P1",
+    "given": "Two slots touching at a boundary",
+    "when": "Confirm subject to configured buffer",
+    "then": "Result follows the approved duration/buffer rule",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-009",
+    "requirement": "BM-EVENT",
+    "title": "Past date",
+    "priority": "P1",
+    "given": "Requested time is in the past in Asia/Kolkata",
+    "when": "Submit enquiry",
+    "then": "Past-time booking request is rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-010",
+    "requirement": "BM-EVENT",
+    "title": "Customer cancellation",
+    "priority": "P1",
+    "given": "Customer owns an enquiry/reservation",
+    "when": "Request cancellation",
+    "then": "Approved policy is followed and availability released appropriately",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-011",
+    "requirement": "BM-EVENT",
+    "title": "Decoration promotion active",
+    "priority": "P1",
+    "given": "Current time within configured promotion",
+    "when": "View enquiry inclusions",
+    "then": "Complimentary basic decoration and actual inclusions are displayed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-012",
+    "requirement": "BM-EVENT",
+    "title": "Decoration promotion ended",
+    "priority": "P1",
+    "given": "Promotion has expired",
+    "when": "View celebration offer",
+    "then": "Expired complimentary offer is not promised",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-013",
+    "requirement": "BM-EVENT",
+    "title": "Free camera",
+    "priority": "P1",
+    "given": "A customer selects camera use",
+    "when": "Review enquiry summary",
+    "then": "Camera use is presented as free",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-014",
+    "requirement": "BM-EVENT",
+    "title": "Photo preferences",
+    "priority": "P1",
+    "given": "Customer selects email or WhatsApp",
+    "when": "Submit valid chosen-channel contact",
+    "then": "Chosen preference and contact are preserved",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-015",
+    "requirement": "BM-EVENT",
+    "title": "Contact validation",
+    "priority": "P1",
+    "given": "Email or WhatsApp preference with invalid contact",
+    "when": "Submit enquiry",
+    "then": "Selected-channel validation prevents invalid contact submission",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-016",
+    "requirement": "BM-EVENT",
+    "title": "Photography assistance",
+    "priority": "P1",
+    "given": "Assistance availability/pricing unresolved",
+    "when": "Request assistance",
+    "then": "Request is recorded without inventing confirmed availability or price",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-017",
+    "requirement": "BM-EVENT",
+    "title": "Photo consent",
+    "priority": "P1",
+    "given": "Photo delivery consent given but marketing consent absent",
+    "when": "Staff reviews permitted usage",
+    "then": "Delivery consent does not grant marketing rights",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-EVENT-018",
+    "requirement": "BM-EVENT",
+    "title": "Event privacy",
+    "priority": "P1",
+    "given": "Two customers have enquiries",
+    "when": "Customer B reads or modifies A enquiry",
+    "then": "Access is denied",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

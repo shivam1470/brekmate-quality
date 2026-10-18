@@ -1,0 +1,4 @@
+# Native customer E2E
+Use Maestro as the proposed default; verify the actual React Native build and tooling before pinning. Flows live in flows/, helpers in subflows/, platform differences in platform/android and platform/ios when actual files exist. Tags: smoke, regression, release, plus requirement/case IDs. Generate config.yaml using the actual application ID and discovery paths. Do not use invented IDs or selectors.
+
+Cover auth, ordering, payment return, restart/offline recovery, tracking, rewards and celebrations on Android/iOS builds. Native runs are not executed here. Browser mobile emulation does not count as native coverage. Local Mac runner should orchestrate native client steps, staff Playwright actions and independent backend assertions via supported CLI exit codes/artifacts; preserve the complete journey run ID.

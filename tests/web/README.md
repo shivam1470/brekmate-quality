@@ -1,0 +1,1 @@
+Use Playwright for cafe/admin/rider web only. Add pages/components based on real selectors, with small helpers rather than a giant base page. Each isolated test must be independently runnable; test ordering cannot supply hidden setup. Full cross-surface journeys are orchestrated separately. Web coverage is currently unimplemented.

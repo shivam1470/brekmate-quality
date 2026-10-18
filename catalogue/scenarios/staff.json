@@ -1,0 +1,194 @@
+[
+  {
+    "id": "BM-STAFF-001",
+    "requirement": "BM-STAFF",
+    "title": "Unauthenticated staff",
+    "priority": "P1",
+    "given": "No staff session",
+    "when": "Open staff APIs",
+    "then": "No operational data or mutation access",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-002",
+    "requirement": "BM-STAFF",
+    "title": "Kitchen price restriction",
+    "priority": "P1",
+    "given": "Kitchen-only role",
+    "when": "Change product price",
+    "then": "Operation is denied",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-003",
+    "requirement": "BM-STAFF",
+    "title": "Authorised price change",
+    "priority": "P1",
+    "given": "Owner/manager with granted permission",
+    "when": "Change price",
+    "then": "Change is applied and audited",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-004",
+    "requirement": "BM-STAFF",
+    "title": "Role escalation",
+    "priority": "P1",
+    "given": "Low-privilege staff user",
+    "when": "Modify own role or forged token claims",
+    "then": "Privilege escalation is denied",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-005",
+    "requirement": "BM-STAFF",
+    "title": "New-order alert",
+    "priority": "P1",
+    "given": "A customer places an order",
+    "when": "Observe cafe order board",
+    "then": "New order appears with persistent visual indication",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-006",
+    "requirement": "BM-STAFF",
+    "title": "Disconnected operator",
+    "priority": "P1",
+    "given": "Staff interface loses connection",
+    "when": "Attempt an order transition",
+    "then": "UI does not falsely claim a server-confirmed update",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-007",
+    "requirement": "BM-STAFF",
+    "title": "Two operator race",
+    "priority": "P1",
+    "given": "Two staff members handle one new order",
+    "when": "Accept and reject concurrently",
+    "then": "One consistent outcome with conflict handling",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "concurrency",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-STAFF-008",
+    "requirement": "BM-STAFF",
+    "title": "Config audit",
+    "priority": "P1",
+    "given": "Authorised admin changes fees or capacity",
+    "when": "Save configuration",
+    "then": "Actor, old/new values and timestamp are auditable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

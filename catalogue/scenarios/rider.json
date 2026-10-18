@@ -1,0 +1,242 @@
+[
+  {
+    "id": "BM-RIDER-001",
+    "requirement": "BM-RIDER",
+    "title": "Manual assignment",
+    "priority": "P1",
+    "given": "An available rider and ready order",
+    "when": "Staff assigns rider",
+    "then": "Assigned rider sees the correct order",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-002",
+    "requirement": "BM-RIDER",
+    "title": "Unauthorised assignment",
+    "priority": "P1",
+    "given": "Customer or unprivileged staff",
+    "when": "Assign rider",
+    "then": "Mutation is denied",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-003",
+    "requirement": "BM-RIDER",
+    "title": "Rider isolation",
+    "priority": "P1",
+    "given": "Rider A and rider B assignments",
+    "when": "Rider B opens rider A order",
+    "then": "Unassigned customer details/actions are unavailable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-004",
+    "requirement": "BM-RIDER",
+    "title": "Navigation",
+    "priority": "P1",
+    "given": "Assigned order has a destination",
+    "when": "Open maps navigation",
+    "then": "Correct destination is passed to an installed maps handler",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-005",
+    "requirement": "BM-RIDER",
+    "title": "Valid delivery OTP",
+    "priority": "P1",
+    "given": "Assigned in-transit order with current OTP",
+    "when": "Submit correct code",
+    "then": "Delivery completes once",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-006",
+    "requirement": "BM-RIDER",
+    "title": "Wrong delivery OTP",
+    "priority": "P1",
+    "given": "Assigned in-transit order",
+    "when": "Submit incorrect code",
+    "then": "Delivery does not complete; attempts are limited",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-007",
+    "requirement": "BM-RIDER",
+    "title": "Cross-order OTP",
+    "priority": "P1",
+    "given": "Two orders with distinct codes",
+    "when": "Use order A code on order B",
+    "then": "Confirmation is rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-008",
+    "requirement": "BM-RIDER",
+    "title": "Failed delivery",
+    "priority": "P1",
+    "given": "Delivery cannot be completed",
+    "when": "Record failed attempt and reason",
+    "then": "Order is not falsely marked delivered or COD collected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-009",
+    "requirement": "BM-RIDER",
+    "title": "Rider reassignment",
+    "priority": "P1",
+    "given": "Order assigned to rider A",
+    "when": "Authorised staff reassigns to B",
+    "then": "A loses mutation rights and B receives assignment",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-RIDER-010",
+    "requirement": "BM-RIDER",
+    "title": "OTP replay",
+    "priority": "P1",
+    "given": "An order was delivered",
+    "when": "Reuse its code",
+    "then": "No duplicate completion, collection or referral effect",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api",
+      "web"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

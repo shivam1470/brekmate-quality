@@ -1,0 +1,140 @@
+[
+  {
+    "id": "BM-NOTIFY-001",
+    "requirement": "BM-NOTIFY",
+    "title": "Status update",
+    "priority": "P1",
+    "given": "Authorised staff changes order state",
+    "when": "Customer refreshes or receives event",
+    "then": "Timeline reflects authoritative order state",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-NOTIFY-002",
+    "requirement": "BM-NOTIFY",
+    "title": "No fake progress",
+    "priority": "P1",
+    "given": "Order remains preparing for a long time",
+    "when": "Wait beyond prototype timers",
+    "then": "App does not invent ready/delivered status",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-NOTIFY-003",
+    "requirement": "BM-NOTIFY",
+    "title": "Push denied",
+    "priority": "P1",
+    "given": "Customer denies push permissions",
+    "when": "Place and track order",
+    "then": "In-app status remains accessible",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-NOTIFY-004",
+    "requirement": "BM-NOTIFY",
+    "title": "Duplicate notification",
+    "priority": "P1",
+    "given": "Event delivered more than once",
+    "when": "Process update",
+    "then": "Order history and notification effects are deduplicated",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-NOTIFY-005",
+    "requirement": "BM-NOTIFY",
+    "title": "Foreground recovery",
+    "priority": "P1",
+    "given": "Order changes while app backgrounded",
+    "when": "Resume app",
+    "then": "Latest authoritative state is fetched",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-NOTIFY-006",
+    "requirement": "BM-NOTIFY",
+    "title": "Notification isolation",
+    "priority": "P1",
+    "given": "A notification targets customer A",
+    "when": "Customer B requests notification details",
+    "then": "Private order details are not disclosed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]
