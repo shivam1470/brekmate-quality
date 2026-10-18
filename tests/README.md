@@ -1,0 +1,1 @@
+Catalogue validation passing means the test data is internally consistent. It does not mean the product passed. A missing adapter is a configuration blocker, not a successful TDD red cycle against business logic. Product failures must be reported separately from tooling failures.

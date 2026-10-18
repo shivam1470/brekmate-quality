@@ -1,0 +1,242 @@
+[
+  {
+    "id": "BM-MOBILE-001",
+    "requirement": "BM-MOBILE",
+    "title": "Android back",
+    "priority": "P1",
+    "given": "Cart, checkout and modal are open in sequence",
+    "when": "Use hardware/system back",
+    "then": "Navigation unwinds safely without accidental duplicate order",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-002",
+    "requirement": "BM-MOBILE",
+    "title": "iOS safe areas",
+    "priority": "P1",
+    "given": "Notched iPhone in supported orientations",
+    "when": "Visit primary screens",
+    "then": "Content and actionable controls remain accessible",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-003",
+    "requirement": "BM-MOBILE",
+    "title": "Keyboard checkout",
+    "priority": "P1",
+    "given": "Small screen and address/contact keyboard visible",
+    "when": "Enter details and submit",
+    "then": "Focused input and submit action remain reachable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-004",
+    "requirement": "BM-MOBILE",
+    "title": "Restart cart",
+    "priority": "P1",
+    "given": "Nonempty configured cart",
+    "when": "Kill and reopen app",
+    "then": "Cart recovery follows documented policy with fresh availability checks",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-005",
+    "requirement": "BM-MOBILE",
+    "title": "Offline recovery",
+    "priority": "P1",
+    "given": "Network drops during checkout submission",
+    "when": "Reconnect and retry",
+    "then": "Server state is reconciled without duplicate order",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-006",
+    "requirement": "BM-MOBILE",
+    "title": "Accessibility",
+    "priority": "P1",
+    "given": "Screen reader and large text enabled",
+    "when": "Complete order journey",
+    "then": "Labels, focus, errors and totals are perceivable and usable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-007",
+    "requirement": "BM-MOBILE",
+    "title": "Payment return",
+    "priority": "P1",
+    "given": "External UPI application completes/cancels",
+    "when": "Return through valid app link",
+    "then": "Correct pending order resumes and backend state is queried",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-008",
+    "requirement": "BM-MOBILE",
+    "title": "Malicious link",
+    "priority": "P1",
+    "given": "Untrusted or altered deep link",
+    "when": "Open app",
+    "then": "No arbitrary URL, token disclosure or unauthorised order operation",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-009",
+    "requirement": "BM-MOBILE",
+    "title": "Fresh install",
+    "priority": "P1",
+    "given": "No prior local data or permissions",
+    "when": "Launch production build",
+    "then": "Onboarding works without prototype role selector",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-MOBILE-010",
+    "requirement": "BM-MOBILE",
+    "title": "Upgrade",
+    "priority": "P1",
+    "given": "Existing install with saved state",
+    "when": "Install next compatible version",
+    "then": "Session/cart migration handles supported old state safely",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "native"
+    ],
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

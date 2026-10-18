@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "logicalScenarios": 158,
+  "expandedBasketCases": 36864,
+  "legacyPricingVectors": 432,
+  "shards": [
+    {
+      "file": "baskets-000.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-001.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-002.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-003.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-004.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-005.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-006.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-007.jsonl",
+      "count": 4096
+    },
+    {
+      "file": "baskets-008.jsonl",
+      "count": 4096
+    }
+  ],
+  "productExecutions": 0
+}

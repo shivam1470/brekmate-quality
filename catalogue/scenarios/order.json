@@ -1,0 +1,278 @@
+[
+  {
+    "id": "BM-ORDER-001",
+    "requirement": "BM-ORDER",
+    "title": "Delivery order",
+    "priority": "P0",
+    "given": "Valid cart, address and payment method",
+    "when": "Place order",
+    "then": "One order with immutable line-price snapshots is created",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-002",
+    "requirement": "BM-ORDER",
+    "title": "Idempotent submit",
+    "priority": "P0",
+    "given": "One checkout idempotency key",
+    "when": "Retry the same request after timeout",
+    "then": "The original order is returned without duplicate debit",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-003",
+    "requirement": "BM-ORDER",
+    "title": "Conflicting retry",
+    "priority": "P0",
+    "given": "Same idempotency key but different payload",
+    "when": "Submit the changed request",
+    "then": "Conflict is rejected; original order is preserved",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-004",
+    "requirement": "BM-ORDER",
+    "title": "Last item race",
+    "priority": "P0",
+    "given": "One remaining stock unit and two customers",
+    "when": "Place orders concurrently",
+    "then": "At most one order reserves that unit",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "concurrency",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-005",
+    "requirement": "BM-ORDER",
+    "title": "Insufficient stock",
+    "priority": "P0",
+    "given": "Requested quantity exceeds stock",
+    "when": "Place order",
+    "then": "No negative stock or partial undocumented charge occurs",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-006",
+    "requirement": "BM-ORDER",
+    "title": "Reject reason",
+    "priority": "P0",
+    "given": "An operator rejects a new order",
+    "when": "Submit without then with a reason",
+    "then": "Required reason is validated and rejection is recorded",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-007",
+    "requirement": "BM-ORDER",
+    "title": "Valid preparation",
+    "priority": "P0",
+    "given": "Accepted order",
+    "when": "Move through preparing and ready",
+    "then": "Customer sees valid transitions with timestamps",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-008",
+    "requirement": "BM-ORDER",
+    "title": "Illegal transition",
+    "priority": "P0",
+    "given": "A newly placed order",
+    "when": "Attempt to jump directly to delivered",
+    "then": "Transition is denied without changing order",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-009",
+    "requirement": "BM-ORDER",
+    "title": "Pickup completion",
+    "priority": "P0",
+    "given": "Pickup order marked ready",
+    "when": "Confirm customer pickup",
+    "then": "Order completes without rider assignment",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-010",
+    "requirement": "BM-ORDER",
+    "title": "Cancellation retry",
+    "priority": "P0",
+    "given": "A cancellation was already handled",
+    "when": "Retry cancellation",
+    "then": "Stock and financial effects occur once",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-011",
+    "requirement": "BM-ORDER",
+    "title": "Reorder sold-out item",
+    "priority": "P0",
+    "given": "A past order contains a now unavailable item",
+    "when": "Choose reorder",
+    "then": "Availability is rechecked and unavailable lines are explained",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ORDER-012",
+    "requirement": "BM-ORDER",
+    "title": "Customer isolation",
+    "priority": "P0",
+    "given": "Two customers with different orders",
+    "when": "Customer B requests customer A order",
+    "then": "Access is denied without exposing order details",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

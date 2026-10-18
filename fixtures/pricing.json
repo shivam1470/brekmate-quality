@@ -1,0 +1,8642 @@
+[
+  {
+    "id": "BM-PRICE-V0001",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0002",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0003",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0004",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0005",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0006",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0007",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0008",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0009",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0010",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0011",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0012",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0013",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0014",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0015",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0016",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0017",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0018",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0019",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0020",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0021",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0022",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0023",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0024",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 1,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 1,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 1
+    }
+  },
+  {
+    "id": "BM-PRICE-V0025",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0026",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0027",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0028",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0029",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0030",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0031",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0032",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0033",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0034",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0035",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0036",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0037",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0038",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0039",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0040",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0041",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0042",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0043",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0044",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0045",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0046",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0047",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0048",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0049",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0050",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0051",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0052",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0053",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0054",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0055",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0056",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0057",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0058",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0059",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0060",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0061",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0062",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0063",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0064",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0065",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0066",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0067",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0068",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0069",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0070",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2004
+    }
+  },
+  {
+    "id": "BM-PRICE-V0071",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0072",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4
+    }
+  },
+  {
+    "id": "BM-PRICE-V0073",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0074",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0075",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0076",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0077",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0078",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0079",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0080",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0081",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0082",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0083",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0084",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0085",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0086",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0087",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0088",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0089",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0090",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0091",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0092",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0093",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2006
+    }
+  },
+  {
+    "id": "BM-PRICE-V0094",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2005
+    }
+  },
+  {
+    "id": "BM-PRICE-V0095",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6
+    }
+  },
+  {
+    "id": "BM-PRICE-V0096",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 6,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 6,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 5
+    }
+  },
+  {
+    "id": "BM-PRICE-V0097",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0098",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0099",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0100",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0101",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0102",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2098
+    }
+  },
+  {
+    "id": "BM-PRICE-V0103",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0104",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 98
+    }
+  },
+  {
+    "id": "BM-PRICE-V0105",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0106",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0107",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0108",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0109",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0110",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0111",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0112",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0113",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0114",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0115",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0116",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0117",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0118",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0119",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0120",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 99,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 99,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0121",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0122",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0123",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0124",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0125",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0126",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 2099
+    }
+  },
+  {
+    "id": "BM-PRICE-V0127",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0128",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 99
+    }
+  },
+  {
+    "id": "BM-PRICE-V0129",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0130",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 2081
+    }
+  },
+  {
+    "id": "BM-PRICE-V0131",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0132",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 81
+    }
+  },
+  {
+    "id": "BM-PRICE-V0133",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0134",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 20,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0135",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0136",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 20,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0137",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0138",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 20,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0139",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0140",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 20,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0141",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 2100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0142",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 20,
+      "totalPaise": 2080
+    }
+  },
+  {
+    "id": "BM-PRICE-V0143",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 100
+    }
+  },
+  {
+    "id": "BM-PRICE-V0144",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 100,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 100,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 20,
+      "totalPaise": 80
+    }
+  },
+  {
+    "id": "BM-PRICE-V0145",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0146",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0147",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0148",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0149",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0150",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 6998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0151",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0152",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0153",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0154",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 6980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0155",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0156",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 4980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0157",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0158",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 999,
+      "totalPaise": 6000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0159",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0160",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 999,
+      "totalPaise": 4000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0161",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0162",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 999,
+      "totalPaise": 6000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0163",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0164",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 999,
+      "totalPaise": 4000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0165",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0166",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 999,
+      "totalPaise": 6000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0167",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0168",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 4999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 4999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 999,
+      "totalPaise": 4000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0169",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0170",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0171",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0172",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0173",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0174",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 6999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0175",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0176",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 4999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0177",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0178",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 6981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0179",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0180",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 4981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0181",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0182",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1000,
+      "totalPaise": 6000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0183",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0184",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1000,
+      "totalPaise": 4000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0185",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0186",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1000,
+      "totalPaise": 6000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0187",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0188",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1000,
+      "totalPaise": 4000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0189",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 7000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0190",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1000,
+      "totalPaise": 6000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0191",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 5000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0192",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 5000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 5000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1000,
+      "totalPaise": 4000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0193",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0194",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0195",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0196",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0197",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0198",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 11898
+    }
+  },
+  {
+    "id": "BM-PRICE-V0199",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0200",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9898
+    }
+  },
+  {
+    "id": "BM-PRICE-V0201",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0202",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 11880
+    }
+  },
+  {
+    "id": "BM-PRICE-V0203",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0204",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9880
+    }
+  },
+  {
+    "id": "BM-PRICE-V0205",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0206",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1979,
+      "totalPaise": 9920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0207",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0208",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1979,
+      "totalPaise": 7920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0209",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0210",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1979,
+      "totalPaise": 9920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0211",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0212",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1979,
+      "totalPaise": 7920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0213",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0214",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1979,
+      "totalPaise": 9920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0215",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0216",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9899,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9899,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1979,
+      "totalPaise": 7920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0217",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0218",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0219",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0220",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0221",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0222",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1,
+      "totalPaise": 11899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0223",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0224",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9899
+    }
+  },
+  {
+    "id": "BM-PRICE-V0225",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0226",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 19,
+      "totalPaise": 11881
+    }
+  },
+  {
+    "id": "BM-PRICE-V0227",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0228",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9881
+    }
+  },
+  {
+    "id": "BM-PRICE-V0229",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0230",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 9920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0231",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0232",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0233",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0234",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 9920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0235",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0236",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0237",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 0,
+      "totalPaise": 11900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0238",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 2000,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 9920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0239",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0240",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9900,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9900,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7920
+    }
+  },
+  {
+    "id": "BM-PRICE-V0241",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0242",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0243",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0244",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0245",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0246",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0247",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0248",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9900
+    }
+  },
+  {
+    "id": "BM-PRICE-V0249",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0250",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9882
+    }
+  },
+  {
+    "id": "BM-PRICE-V0251",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0252",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9882
+    }
+  },
+  {
+    "id": "BM-PRICE-V0253",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0254",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7921
+    }
+  },
+  {
+    "id": "BM-PRICE-V0255",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0256",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7921
+    }
+  },
+  {
+    "id": "BM-PRICE-V0257",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0258",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7921
+    }
+  },
+  {
+    "id": "BM-PRICE-V0259",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0260",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7921
+    }
+  },
+  {
+    "id": "BM-PRICE-V0261",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0262",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7921
+    }
+  },
+  {
+    "id": "BM-PRICE-V0263",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9901
+    }
+  },
+  {
+    "id": "BM-PRICE-V0264",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9901,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9901,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 7921
+    }
+  },
+  {
+    "id": "BM-PRICE-V0265",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0266",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0267",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0268",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0269",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0270",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0271",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0272",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0273",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0274",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0275",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0276",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0277",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0278",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 8019
+    }
+  },
+  {
+    "id": "BM-PRICE-V0279",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0280",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 8019
+    }
+  },
+  {
+    "id": "BM-PRICE-V0281",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0282",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1999,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0283",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0284",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1999,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0285",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0286",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1999,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0287",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0288",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 9999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 9999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1999,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0289",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0290",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0291",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0292",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0293",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0294",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0295",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0296",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 9999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0297",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0298",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0299",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0300",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 9981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0301",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0302",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 8020
+    }
+  },
+  {
+    "id": "BM-PRICE-V0303",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0304",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 8020
+    }
+  },
+  {
+    "id": "BM-PRICE-V0305",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0306",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2000,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0307",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0308",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2000,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0309",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0310",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2000,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0311",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 10000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0312",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 10000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 10000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2000,
+      "totalPaise": 8000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0313",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0314",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0315",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0316",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0317",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0318",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 14998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0319",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0320",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 14998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0321",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0322",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 14980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0323",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0324",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 14980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0325",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0326",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 13019
+    }
+  },
+  {
+    "id": "BM-PRICE-V0327",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0328",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 13019
+    }
+  },
+  {
+    "id": "BM-PRICE-V0329",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0330",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2999,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0331",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0332",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2999,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0333",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0334",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2999,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0335",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0336",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 14999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 14999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 2999,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0337",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0338",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0339",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0340",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0341",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0342",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0343",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0344",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 14999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0345",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0346",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 14981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0347",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0348",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 14981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0349",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0350",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 13020
+    }
+  },
+  {
+    "id": "BM-PRICE-V0351",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0352",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 13020
+    }
+  },
+  {
+    "id": "BM-PRICE-V0353",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0354",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0355",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0356",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0357",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0358",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0359",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0360",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0361",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0362",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0363",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0364",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0365",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0366",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0367",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0368",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 15000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0369",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0370",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 14982
+    }
+  },
+  {
+    "id": "BM-PRICE-V0371",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0372",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 14982
+    }
+  },
+  {
+    "id": "BM-PRICE-V0373",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0374",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 13021
+    }
+  },
+  {
+    "id": "BM-PRICE-V0375",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0376",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 13021
+    }
+  },
+  {
+    "id": "BM-PRICE-V0377",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0378",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0379",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0380",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0381",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0382",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0383",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 15001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0384",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 15001,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 15001,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 12001
+    }
+  },
+  {
+    "id": "BM-PRICE-V0385",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0386",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0387",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0388",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0389",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0390",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 49998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0391",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0392",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 49998
+    }
+  },
+  {
+    "id": "BM-PRICE-V0393",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0394",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 49980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0395",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0396",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 49980
+    }
+  },
+  {
+    "id": "BM-PRICE-V0397",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0398",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 48019
+    }
+  },
+  {
+    "id": "BM-PRICE-V0399",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0400",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 48019
+    }
+  },
+  {
+    "id": "BM-PRICE-V0401",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0402",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 46999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0403",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0404",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 46999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0405",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0406",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 9999,
+      "totalPaise": 40000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0407",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0408",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 49999,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 49999,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 9999,
+      "totalPaise": 40000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0409",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0410",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 0,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0411",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0412",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 0,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0413",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0414",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0415",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0416",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1,
+      "totalPaise": 49999
+    }
+  },
+  {
+    "id": "BM-PRICE-V0417",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0418",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 19,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 49981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0419",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0420",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 19,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 19,
+      "totalPaise": 49981
+    }
+  },
+  {
+    "id": "BM-PRICE-V0421",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0422",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 48020
+    }
+  },
+  {
+    "id": "BM-PRICE-V0423",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0424",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 1980,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 1980,
+      "totalPaise": 48020
+    }
+  },
+  {
+    "id": "BM-PRICE-V0425",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0426",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 47000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0427",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0428",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 3000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 3000,
+      "totalPaise": 47000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0429",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0430",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "delivery",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 10000,
+      "totalPaise": 40000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0431",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": false
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 0,
+      "totalPaise": 50000
+    }
+  },
+  {
+    "id": "BM-PRICE-V0432",
+    "requirements": [
+      "BM-PRICE",
+      "BM-WALLET"
+    ],
+    "rounding": "PROPOSED-floor-to-paise",
+    "input": {
+      "subtotalPaise": 50000,
+      "availableRewardPaise": 10000,
+      "fulfilment": "pickup",
+      "useRewards": true
+    },
+    "expected": {
+      "subtotalPaise": 50000,
+      "deliveryFeePaise": 0,
+      "rewardUsedPaise": 10000,
+      "totalPaise": 40000
+    }
+  }
+]

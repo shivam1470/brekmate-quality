@@ -1,0 +1,4 @@
+# Release gate
+PR: catalogue/schema/generator integrity, relevant local unit/API checks and targeted journeys when available. Scheduled: broader regression, provider sandbox and device variants. Release: every launch-scope P0/P1 requirement needs current executable evidence or explicitly approved scope change, full critical native/web journeys, security/recovery and actual cloud integration checks.
+
+Missing automation, not-run tests, quarantines and unresolved launch rules remain blockers. Retry-pass is reported separately from clean first-pass. Reports link application/test commits, environments and dependencies. A missing driver is not a business-logic TDD red cycle. Passing catalogue checks do not prove product behaviour. A complete release evidence aggregator is future work; current readiness script fails closed.

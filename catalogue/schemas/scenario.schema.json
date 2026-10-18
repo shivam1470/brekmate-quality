@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "requirement",
+    "title",
+    "given",
+    "when",
+    "then",
+    "classification",
+    "specificationStatus",
+    "automationStatus",
+    "execution",
+    "status",
+    "priority",
+    "blocking_decision",
+    "intendedLayers",
+    "platforms",
+    "fixtureRefs",
+    "implementationRefs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requirement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "given": {
+      "type": "string",
+      "minLength": 1
+    },
+    "when": {
+      "type": "string",
+      "minLength": 1
+    },
+    "then": {
+      "type": "string",
+      "minLength": 1
+    },
+    "classification": {
+      "type": "string",
+      "minLength": 1
+    },
+    "specificationStatus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "automationStatus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "execution": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "P0",
+        "P1",
+        "P2"
+      ]
+    },
+    "blocking_decision": {
+      "type": "boolean"
+    },
+    "intendedLayers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "fixtureRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implementationRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

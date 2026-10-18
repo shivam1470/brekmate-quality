@@ -1,0 +1,186 @@
+[
+  {
+    "id": "BM-ADDR-001",
+    "requirement": "BM-ADDR",
+    "title": "In-zone address",
+    "priority": "P1",
+    "given": "Valid coordinates within configured radius",
+    "when": "Request delivery quote",
+    "then": "Address is serviceable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-002",
+    "requirement": "BM-ADDR",
+    "title": "Outside zone",
+    "priority": "P1",
+    "given": "Coordinates outside configured radius",
+    "when": "Attempt delivery checkout",
+    "then": "Delivery is refused even when subtotal exceeds the free threshold",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-003",
+    "requirement": "BM-ADDR",
+    "title": "Boundary radius",
+    "priority": "P1",
+    "given": "Address exactly at configured radius",
+    "when": "Evaluate serviceability",
+    "then": "Result follows the approved inclusive/exclusive boundary policy",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-004",
+    "requirement": "BM-ADDR",
+    "title": "Missing coordinates",
+    "priority": "P1",
+    "given": "An incomplete or ungeocoded address",
+    "when": "Attempt delivery checkout",
+    "then": "User is asked for adequate location information; no assumed serviceability",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-005",
+    "requirement": "BM-ADDR",
+    "title": "Address ownership",
+    "priority": "P1",
+    "given": "Customer A owns a saved address",
+    "when": "Customer B requests or changes it",
+    "then": "Access is denied without leaking address data",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-006",
+    "requirement": "BM-ADDR",
+    "title": "Address persistence",
+    "priority": "P1",
+    "given": "A customer saves an address",
+    "when": "Restart and sign in again",
+    "then": "Saved address is available to its owner",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-007",
+    "requirement": "BM-ADDR",
+    "title": "Permission denied",
+    "priority": "P1",
+    "given": "Device location permission denied",
+    "when": "Choose a delivery address",
+    "then": "Manual address selection remains possible",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-ADDR-008",
+    "requirement": "BM-ADDR",
+    "title": "Pickup without delivery address",
+    "priority": "P1",
+    "given": "Valid pickup order",
+    "when": "Checkout without a delivery address",
+    "then": "No delivery address or delivery fee is required",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

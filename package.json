@@ -1,0 +1,18 @@
+{
+  "name": "brekmate-acceptance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "npm run test:catalogue && npm run test:product",
+    "test:catalogue": "node --test tests/catalogue.test.mjs tests/generator.test.mjs",
+    "test:product": "node --test tests/pricing.contract.test.mjs tests/basket.contract.test.mjs",
+    "readiness": "node scripts/readiness.mjs",
+    "generate": "node scripts/generate.mjs",
+    "export:portable": "node scripts/drive-export.mjs",
+    "test:local-product": "node scripts/verify-local-product.mjs"
+  }
+}

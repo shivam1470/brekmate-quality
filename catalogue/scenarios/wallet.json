@@ -1,0 +1,186 @@
+[
+  {
+    "id": "BM-WALLET-001",
+    "requirement": "BM-WALLET",
+    "title": "No topup",
+    "priority": "P0",
+    "given": "A customer reward wallet",
+    "when": "Attempt customer topup",
+    "then": "Unsupported topup is rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-002",
+    "requirement": "BM-WALLET",
+    "title": "No withdrawal",
+    "priority": "P0",
+    "given": "A customer reward balance",
+    "when": "Attempt cash withdrawal or transfer",
+    "then": "Unsupported withdrawal is rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-003",
+    "requirement": "BM-WALLET",
+    "title": "Concurrent redemption",
+    "priority": "P0",
+    "given": "Balance sufficient for only one of two redemptions",
+    "when": "Submit two orders concurrently",
+    "then": "Committed redemption never exceeds balance",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "concurrency",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-004",
+    "requirement": "BM-WALLET",
+    "title": "Ledger balance",
+    "priority": "P0",
+    "given": "Multiple credits/debits and reversals",
+    "when": "Fetch history and balance",
+    "then": "Balance reconciles to committed ledger entries",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-005",
+    "requirement": "BM-WALLET",
+    "title": "Client balance tampering",
+    "priority": "P0",
+    "given": "Client changes claimed wallet balance",
+    "when": "Checkout using fabricated balance",
+    "then": "Authoritative balance is used",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-006",
+    "requirement": "BM-WALLET",
+    "title": "Redemption retry",
+    "priority": "P0",
+    "given": "An order debit was already committed",
+    "when": "Retry the same operation",
+    "then": "No second debit occurs",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-007",
+    "requirement": "BM-WALLET",
+    "title": "Cancelled debit reversal",
+    "priority": "P0",
+    "given": "A debited order is cancelled under approved policy",
+    "when": "Process cancellation repeatedly",
+    "then": "Eligible reversal occurs at most once",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-WALLET-008",
+    "requirement": "BM-WALLET",
+    "title": "Cross-account wallet",
+    "priority": "P0",
+    "given": "Customer A has rewards",
+    "when": "Customer B requests A ledger or spends A funds",
+    "then": "Read and write access are denied",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

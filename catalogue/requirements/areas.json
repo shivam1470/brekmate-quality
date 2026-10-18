@@ -1,0 +1,77 @@
+[
+  {
+    "id": "BM-AUTH",
+    "area": "Authentication and account lifecycle",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-CAT",
+    "area": "Menu and availability",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-PRICE",
+    "area": "Pricing and checkout",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-ADDR",
+    "area": "Addresses and service area",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-PAY",
+    "area": "Payments and reconciliation",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-ORDER",
+    "area": "Order lifecycle and stock",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-WALLET",
+    "area": "Reward ledger",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-REF",
+    "area": "Referral eligibility and abuse",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-STAFF",
+    "area": "Caf\u00e9 and admin permissions",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-RIDER",
+    "area": "Rider and delivery confirmation",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-EVENT",
+    "area": "Celebration enquiries and reservations",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-NOTIFY",
+    "area": "Notifications and tracking",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-MOBILE",
+    "area": "Native device behaviour",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-SEC",
+    "area": "Security and privacy",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  },
+  {
+    "id": "BM-OPS",
+    "area": "Reliability and release verification",
+    "source": "Agreed conversation requirements; proposed details flagged in docs/decisions.md"
+  }
+]

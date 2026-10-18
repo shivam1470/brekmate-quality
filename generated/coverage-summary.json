@@ -1,0 +1,130 @@
+{
+  "areas": [
+    {
+      "requirement": "BM-AUTH",
+      "area": "Authentication and account lifecycle",
+      "authoredScenarios": 10,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-CAT",
+      "area": "Menu and availability",
+      "authoredScenarios": 10,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-PRICE",
+      "area": "Pricing and checkout",
+      "authoredScenarios": 14,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-ADDR",
+      "area": "Addresses and service area",
+      "authoredScenarios": 8,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-PAY",
+      "area": "Payments and reconciliation",
+      "authoredScenarios": 14,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-ORDER",
+      "area": "Order lifecycle and stock",
+      "authoredScenarios": 12,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-WALLET",
+      "area": "Reward ledger",
+      "authoredScenarios": 8,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-REF",
+      "area": "Referral eligibility and abuse",
+      "authoredScenarios": 12,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-STAFF",
+      "area": "Caf\u00e9 and admin permissions",
+      "authoredScenarios": 8,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-RIDER",
+      "area": "Rider and delivery confirmation",
+      "authoredScenarios": 10,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-EVENT",
+      "area": "Celebration enquiries and reservations",
+      "authoredScenarios": 18,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-NOTIFY",
+      "area": "Notifications and tracking",
+      "authoredScenarios": 6,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-MOBILE",
+      "area": "Native device behaviour",
+      "authoredScenarios": 10,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-SEC",
+      "area": "Security and privacy",
+      "authoredScenarios": 8,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    },
+    {
+      "requirement": "BM-OPS",
+      "area": "Reliability and release verification",
+      "authoredScenarios": 10,
+      "implementedJourneyTests": 0,
+      "productPassed": 0,
+      "status": "blocked-no-product-drivers"
+    }
+  ],
+  "logicalScenarios": 158,
+  "expandedBasketCases": 36864,
+  "legacyPricingVectors": 432,
+  "harnessChecksPassed": 9,
+  "productExecutions": 0,
+  "note": "Generated pricing/basket examples do not establish native/web E2E coverage."
+}

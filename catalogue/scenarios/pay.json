@@ -1,0 +1,324 @@
+[
+  {
+    "id": "BM-PAY-001",
+    "requirement": "BM-PAY",
+    "title": "UPI success",
+    "priority": "P0",
+    "given": "A valid order and sandbox UPI payment",
+    "when": "Receive verified success",
+    "then": "Order becomes paid once for the verified amount",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-002",
+    "requirement": "BM-PAY",
+    "title": "Card success",
+    "priority": "P0",
+    "given": "A valid order and sandbox card payment",
+    "when": "Complete successful card checkout",
+    "then": "Only gateway references are stored; sensitive card data is not retained",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-003",
+    "requirement": "BM-PAY",
+    "title": "Payment decline",
+    "priority": "P0",
+    "given": "Gateway declines payment",
+    "when": "Return to checkout",
+    "then": "No paid status or reward is issued; recovery is available",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-004",
+    "requirement": "BM-PAY",
+    "title": "User cancellation",
+    "priority": "P0",
+    "given": "Gateway checkout is open",
+    "when": "Cancel and return to app",
+    "then": "Order is not falsely marked paid",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-005",
+    "requirement": "BM-PAY",
+    "title": "Forged client success",
+    "priority": "P0",
+    "given": "No successful gateway payment exists",
+    "when": "Client claims payment success",
+    "then": "Backend refuses to trust the client claim",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-006",
+    "requirement": "BM-PAY",
+    "title": "Invalid webhook signature",
+    "priority": "P0",
+    "given": "An unsigned or incorrectly signed payment event",
+    "when": "Deliver webhook",
+    "then": "Event is rejected without state mutation",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-007",
+    "requirement": "BM-PAY",
+    "title": "Amount mismatch",
+    "priority": "P0",
+    "given": "Signed webhook has an unexpected amount or currency",
+    "when": "Process event",
+    "then": "Order is not incorrectly settled; discrepancy is surfaced",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-008",
+    "requirement": "BM-PAY",
+    "title": "Duplicate webhook",
+    "priority": "P0",
+    "given": "A successful event already processed",
+    "when": "Replay the same event concurrently",
+    "then": "Exactly one payment ledger effect occurs",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "concurrency",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-009",
+    "requirement": "BM-PAY",
+    "title": "Delayed success",
+    "priority": "P0",
+    "given": "App has timed out before provider success",
+    "when": "Reconcile a later verified event",
+    "then": "Payment is resolved consistently without duplicate charge/order",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-010",
+    "requirement": "BM-PAY",
+    "title": "Out-of-order events",
+    "priority": "P0",
+    "given": "Success has already been verified",
+    "when": "Receive an older pending event",
+    "then": "Paid state does not regress",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-011",
+    "requirement": "BM-PAY",
+    "title": "App killed during payment",
+    "priority": "P0",
+    "given": "Gateway operation is in progress",
+    "when": "Terminate and reopen app",
+    "then": "Backend payment state is recovered; no assumed success",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-012",
+    "requirement": "BM-PAY",
+    "title": "COD checkout",
+    "priority": "P0",
+    "given": "A valid COD order",
+    "when": "Place order",
+    "then": "Order is unpaid/COD-due rather than prepaid",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-013",
+    "requirement": "BM-PAY",
+    "title": "COD collection",
+    "priority": "P0",
+    "given": "Assigned rider delivers a COD order",
+    "when": "Record confirmed collection once",
+    "then": "Collected amount is recorded exactly once and becomes auditable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PAY-014",
+    "requirement": "BM-PAY",
+    "title": "Provider unavailable",
+    "priority": "P0",
+    "given": "Payment gateway is unreachable",
+    "when": "Attempt prepaid checkout",
+    "then": "Failure is recoverable without duplicate inventory or wallet deductions",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

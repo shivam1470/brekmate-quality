@@ -1,0 +1,8 @@
+reports/runs/
+artifacts/
+node_modules/
+.env
+.env.*
+!.env.example
+*.tfstate*
+.DS_Store

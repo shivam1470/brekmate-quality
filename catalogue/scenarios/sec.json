@@ -1,0 +1,186 @@
+[
+  {
+    "id": "BM-SEC-001",
+    "requirement": "BM-SEC",
+    "title": "Injection",
+    "priority": "P0",
+    "given": "SQL/metacharacters in user-controlled input",
+    "when": "Submit search, instructions and event fields",
+    "then": "Inputs cannot execute database commands",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-002",
+    "requirement": "BM-SEC",
+    "title": "Stored script",
+    "priority": "P0",
+    "given": "HTML/script text in instructions",
+    "when": "Staff opens order",
+    "then": "User text is rendered safely without script execution",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-003",
+    "requirement": "BM-SEC",
+    "title": "Secret leakage",
+    "priority": "P0",
+    "given": "App bundle, responses and logs",
+    "when": "Inspect credentials and tokens",
+    "then": "No private gateway keys, cloud secrets or OTPs are exposed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-004",
+    "requirement": "BM-SEC",
+    "title": "Staff CSRF",
+    "priority": "P0",
+    "given": "Cookie-authenticated staff browser if used",
+    "when": "Issue cross-origin forged mutation",
+    "then": "Chosen CSRF defence blocks the request",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-005",
+    "requirement": "BM-SEC",
+    "title": "Token validation",
+    "priority": "P0",
+    "given": "Expired, wrong-audience or invalid-signature token",
+    "when": "Call protected API",
+    "then": "All invalid tokens are rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-006",
+    "requirement": "BM-SEC",
+    "title": "Resource limits",
+    "priority": "P0",
+    "given": "Excessive body sizes and request rates",
+    "when": "Send abusive requests",
+    "then": "Limits reject abuse without unbounded allocation",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-007",
+    "requirement": "BM-SEC",
+    "title": "Object authorisation",
+    "priority": "P0",
+    "given": "Guessed order/address/enquiry IDs",
+    "when": "Access as another customer",
+    "then": "Every object access enforces ownership/role",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-SEC-008",
+    "requirement": "BM-SEC",
+    "title": "Log privacy",
+    "priority": "P0",
+    "given": "Customer contact and photo preferences",
+    "when": "Trigger success and failure paths",
+    "then": "Logs follow redaction rules without secrets or unnecessary personal data",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

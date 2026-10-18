@@ -1,0 +1,232 @@
+[
+  {
+    "id": "BM-CAT-001",
+    "requirement": "BM-CAT",
+    "title": "Available catalogue",
+    "priority": "P1",
+    "given": "Available and unavailable menu items",
+    "when": "Browse and search customer catalogue",
+    "then": "Only orderable items are offered for addition",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-002",
+    "requirement": "BM-CAT",
+    "title": "Availability propagation",
+    "priority": "P1",
+    "given": "Staff disables an item",
+    "when": "Refresh catalogue on a second customer device",
+    "then": "The disabled item is no longer orderable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-003",
+    "requirement": "BM-CAT",
+    "title": "Stale cart",
+    "priority": "P1",
+    "given": "An item is disabled after being added",
+    "when": "Attempt checkout",
+    "then": "Order is blocked with an actionable item-unavailable message",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-004",
+    "requirement": "BM-CAT",
+    "title": "Price change",
+    "priority": "P1",
+    "given": "Price changes after cart creation",
+    "when": "Request checkout quote",
+    "then": "Current server price is shown and consent required before charging a changed total",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-005",
+    "requirement": "BM-CAT",
+    "title": "Category disable",
+    "priority": "P1",
+    "given": "Staff disables a category",
+    "when": "Browse its products and attempt direct ordering",
+    "then": "Products in that category cannot be ordered",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-006",
+    "requirement": "BM-CAT",
+    "title": "Store closed",
+    "priority": "P1",
+    "given": "Store is offline",
+    "when": "Browse and submit an order",
+    "then": "Closed state is shown and new immediate orders are rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-007",
+    "requirement": "BM-CAT",
+    "title": "Customisation retention",
+    "priority": "P1",
+    "given": "An item has paid add-ons and instructions",
+    "when": "Add quantity two and reopen cart",
+    "then": "Add-ons, quantity and instructions persist with correct line total",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-008",
+    "requirement": "BM-CAT",
+    "title": "Distinct cart lines",
+    "priority": "P1",
+    "given": "Same item with different customisations",
+    "when": "Add both configurations",
+    "then": "The configurations remain distinguishable and independently editable",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-009",
+    "requirement": "BM-CAT",
+    "title": "Tampered item price",
+    "priority": "P1",
+    "given": "A client sends a changed item price",
+    "when": "Request a quote",
+    "then": "Server uses the authoritative catalogue price",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-CAT-010",
+    "requirement": "BM-CAT",
+    "title": "Pure vegetarian menu",
+    "priority": "P1",
+    "given": "Admin creates a product",
+    "when": "Attempt to publish a nonvegetarian item",
+    "then": "Publishing follows the pure-vegetarian catalogue constraint",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

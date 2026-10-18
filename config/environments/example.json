@@ -1,0 +1,16 @@
+{
+  "environment": "local",
+  "apiBaseURL": "",
+  "cafeBaseURL": "",
+  "adminBaseURL": "",
+  "riderBaseURL": "",
+  "androidApplicationId": "",
+  "iosApplicationId": "",
+  "allowedNonProductionHosts": [
+    "localhost",
+    "127.0.0.1"
+  ],
+  "productionAccessAllowed": false,
+  "paymentMode": "stub",
+  "notificationsMode": "stub"
+}

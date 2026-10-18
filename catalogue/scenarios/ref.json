@@ -1,0 +1,278 @@
+[
+  {
+    "id": "BM-REF-001",
+    "requirement": "BM-REF",
+    "title": "Qualifying prepaid referral",
+    "priority": "P0",
+    "given": "New referred customer first order exceeds 9900 and is paid",
+    "when": "Mark delivered",
+    "then": "Referrer receives exactly 10000 paise once",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-002",
+    "requirement": "BM-REF",
+    "title": "Referral exact threshold",
+    "priority": "P0",
+    "given": "First delivered paid order subtotal is 9900",
+    "when": "Evaluate referral",
+    "then": "No reward is credited",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-003",
+    "requirement": "BM-REF",
+    "title": "Referral below threshold",
+    "priority": "P0",
+    "given": "First delivered paid order subtotal is 9899",
+    "when": "Evaluate referral",
+    "then": "No reward is credited",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-004",
+    "requirement": "BM-REF",
+    "title": "Uncollected COD referral",
+    "priority": "P0",
+    "given": "Qualifying referred order delivered but cash not collected",
+    "when": "Evaluate referral",
+    "then": "No reward until collection is confirmed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-005",
+    "requirement": "BM-REF",
+    "title": "Collected COD referral",
+    "priority": "P0",
+    "given": "Qualifying COD delivery and collection confirmed",
+    "when": "Evaluate referral twice",
+    "then": "One 10000-paise credit occurs",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-006",
+    "requirement": "BM-REF",
+    "title": "Undelivered order",
+    "priority": "P0",
+    "given": "Referred first order is paid but preparing",
+    "when": "Evaluate referral",
+    "then": "Reward remains uncredited",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-007",
+    "requirement": "BM-REF",
+    "title": "Cancelled first order",
+    "priority": "P0",
+    "given": "Referred order is cancelled",
+    "when": "Evaluate referral",
+    "then": "No reward for that cancelled order",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-008",
+    "requirement": "BM-REF",
+    "title": "Fully refunded order",
+    "priority": "P0",
+    "given": "A qualifying order is fully refunded",
+    "when": "Reconcile referral under approved reversal policy",
+    "then": "No retained qualifying reward; reversal and debt policy must be explicit",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-009",
+    "requirement": "BM-REF",
+    "title": "Self referral",
+    "priority": "P0",
+    "given": "Customer enters own referral code",
+    "when": "Attempt referral registration",
+    "then": "Self-referral is rejected",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-010",
+    "requirement": "BM-REF",
+    "title": "Invalid code",
+    "priority": "P0",
+    "given": "A nonexistent referral code",
+    "when": "Apply code",
+    "then": "Clear invalid-code response without creating attribution",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-011",
+    "requirement": "BM-REF",
+    "title": "Second order",
+    "priority": "P0",
+    "given": "Customer already has a qualifying first-order reward",
+    "when": "Deliver another order",
+    "then": "No new first-order reward",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-REF-012",
+    "requirement": "BM-REF",
+    "title": "Duplicate delivery events",
+    "priority": "P0",
+    "given": "One qualifying referral order",
+    "when": "Process delivery events concurrently",
+    "then": "Exactly one unique reward ledger entry",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "concurrency",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]

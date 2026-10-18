@@ -1,0 +1,324 @@
+[
+  {
+    "id": "BM-PRICE-001",
+    "requirement": "BM-PRICE",
+    "title": "Threshold below",
+    "priority": "P0",
+    "given": "Delivery subtotal is 9899 paise",
+    "when": "Quote the order",
+    "then": "Delivery fee is 2000 paise",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-002",
+    "requirement": "BM-PRICE",
+    "title": "Threshold exact",
+    "priority": "P0",
+    "given": "Delivery subtotal is 9900 paise",
+    "when": "Quote the order",
+    "then": "Delivery fee is 2000 paise",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-003",
+    "requirement": "BM-PRICE",
+    "title": "Threshold above",
+    "priority": "P0",
+    "given": "Delivery subtotal is 9901 paise",
+    "when": "Quote the order",
+    "then": "Delivery fee is zero",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-004",
+    "requirement": "BM-PRICE",
+    "title": "Pickup fee",
+    "priority": "P0",
+    "given": "Valid pickup order below threshold",
+    "when": "Quote the order",
+    "then": "Delivery fee is zero",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-005",
+    "requirement": "BM-PRICE",
+    "title": "Wallet threshold independence",
+    "priority": "P0",
+    "given": "Subtotal exceeds 9900 before reward redemption",
+    "when": "Redeem rewards and quote",
+    "then": "Free delivery stays free even if cash payable is below 9900",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-006",
+    "requirement": "BM-PRICE",
+    "title": "Wallet 20 percent",
+    "priority": "P0",
+    "given": "Eligible subtotal is 15000 and reward balance is sufficient",
+    "when": "Apply reward credit",
+    "then": "Applied reward is at most 3000 paise",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-007",
+    "requirement": "BM-PRICE",
+    "title": "Wallet balance cap",
+    "priority": "P0",
+    "given": "Reward balance is below the 20 percent allowance",
+    "when": "Apply reward credit",
+    "then": "Applied reward does not exceed available balance",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-008",
+    "requirement": "BM-PRICE",
+    "title": "Wallet disabled",
+    "priority": "P0",
+    "given": "A customer has reward balance",
+    "when": "Turn reward use off",
+    "then": "Applied reward is zero and total is recomputed",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-009",
+    "requirement": "BM-PRICE",
+    "title": "Taxes excluded from cap",
+    "priority": "P0",
+    "given": "Subtotal and tax are nonzero",
+    "when": "Calculate reward allowance",
+    "then": "Only eligible item subtotal determines the cap",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-010",
+    "requirement": "BM-PRICE",
+    "title": "Delivery excluded from cap",
+    "priority": "P0",
+    "given": "Paid delivery and nonzero subtotal",
+    "when": "Calculate reward allowance",
+    "then": "Delivery fee does not increase the cap",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-011",
+    "requirement": "BM-PRICE",
+    "title": "Empty checkout",
+    "priority": "P0",
+    "given": "Cart contains no items",
+    "when": "Request quote and place order",
+    "then": "No empty order or charge is created",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-012",
+    "requirement": "BM-PRICE",
+    "title": "Invalid quantities",
+    "priority": "P0",
+    "given": "Client sends zero, negative or fractional quantity",
+    "when": "Request quote",
+    "then": "Input is rejected without mutating stock or balance",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-013",
+    "requirement": "BM-PRICE",
+    "title": "Money precision",
+    "priority": "P0",
+    "given": "A supported non-round paise subtotal",
+    "when": "Apply rewards",
+    "then": "Integer-paise rounding follows the explicitly approved rounding rule",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": true,
+    "classification": "acceptance",
+    "specificationStatus": "needs-decision",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  },
+  {
+    "id": "BM-PRICE-014",
+    "requirement": "BM-PRICE",
+    "title": "Quote/payment consistency",
+    "priority": "P0",
+    "given": "An accepted quote and unchanged cart",
+    "when": "Proceed to payment",
+    "then": "Payment request, receipt and order use the same server total",
+    "status": "specified",
+    "execution": "manual-or-future-automation",
+    "blocking_decision": false,
+    "classification": "acceptance",
+    "specificationStatus": "specified",
+    "automationStatus": "not-implemented",
+    "intendedLayers": [
+      "api"
+    ],
+    "platforms": [
+      "backend"
+    ],
+    "fixtureRefs": [],
+    "implementationRefs": []
+  }
+]
